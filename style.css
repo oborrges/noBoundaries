@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --font-family-primary: 'Mulish', sans-serif;
+  --font-color-main: #B52184;
+  --font-color-secondary: #312D64;
+
+  --bg-first-color:  #F9F4FB;
+  --background-second-color: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+
+  --color-box-shadow: rgba(0, 0, 0, 0.25);
+
+
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font-family-primary);
+
+  background: var(--bg-first-color);
+}
+
+
+.homePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 9.3rem;
+}
+
+
+.homePage h1 {
+  color: var(--font-color-main);
+  font-size: 3.2rem;
+  font-family: var(--font-family-primary);
+  font-weight: 900;
+  padding: 1.7rem 0 .5rem;
+}
+
+.homePage p {
+  color: var(--font-color-secondary);
+  font-size: 2.0rem;
+  font-weight: 600;
+  padding-bottom: 3.5rem;
+}
+
+
+/*SECOND PAGE*/ 
+
+.secondPage {
+  background: var(--background-second-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.card {
+  background: var(--bg-first-color);
+  max-width: 29.9rem;
+  min-height: 28.5rem;
+  padding: 2.6rem;
+  border-radius: 2rem;
+  box-shadow: 0px 3.3px 13.2px 0px var(--color-box-shadow); 
+  margin-bottom: 5rem;
+}
+
+.card h2 {
+  color: var(--font-color-main);
+  font-size: 2.9rem;
+  font-family: var(--font-family-primary);
+  font-weight: 900;
+  padding: 1.2rem 0 0.9rem;
+}
+
+.card p {
+  min-width: 24rem;
+  font-size: 1.6rem;
+  font-family: var(--font-color-secondary);
+  font-weight: 600;
+}
