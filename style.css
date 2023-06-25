@@ -84,3 +84,129 @@ body {
   font-family: var(--font-color-secondary);
   font-weight: 600;
 }
+
+/*FORM*/
+
+form {
+  padding: 7.5rem 4.0rem 6.5rem;
+}
+
+fieldset {
+ display: flex;
+ flex-direction: column; 
+ border: none;
+
+ background: var(--bg-first-color);
+}
+
+legend {
+  color: var(--font-color-main);
+  font-size: 3.2rem;
+  font-family: var(--font-family-primary);
+  font-weight: 900;
+
+  margin-bottom: 4.3rem;
+}
+
+input {
+  background: var(--bg-first-color);
+  
+  display: flex;
+  max-width: 34.8rem;
+  padding: 1.2rem 1.6rem 1.2rem 1.4rem;
+  align-items: center;
+  gap: 1.2rem;
+
+  border-radius: 1.6rem;
+  border: 1.8px solid var(--font-color-secondary);
+
+  margin-bottom: 2.4rem;
+
+  color: var(--font-color-secondary);
+  font-size: 1.6rem;
+  font-family: var(--font-family-primary);
+  font-weight: 600;
+}
+
+input::placeholder {
+  color: var(--font-color-secondary);
+  font-size: 1.6rem;
+  font-family: var(--font-family-primary);
+  font-weight: 600;
+}
+
+input:focus {
+  border-radius: 1.6rem;
+  outline: 1.8px solid var(--font-color-secondary);
+  background: var(--bg-first-color);
+}
+  
+textarea {
+  background: var(--bg-first-color);
+  
+  display: flex;
+  max-width: 34.8rem;
+  max-height: 13.0rem;
+  padding: 1.2rem 1.6rem 1.6rem 1.6rem;
+  align-items: center;
+  gap: 1.2rem;
+
+  border-radius: 1.6rem;
+  border: 1.8px solid var(--font-color-secondary);
+
+  margin-bottom: 2.4rem;
+
+  color: var(--font-color-secondary);
+  font-size: 1.6rem;
+  font-family: var(--font-family-primary);
+  font-weight: 600;
+}
+
+textarea:focus {
+  border-radius: 1.6rem;
+  outline: 1.8px solid var(--font-color-secondary);
+  background: var(--bg-first-color);
+}
+
+button {
+  max-width: 16.0rem;
+  height: 4.5rem;
+  padding: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border: hidden;
+
+  border-radius: 1.6rem;
+  background: var(--background-second-color);
+
+  box-shadow: var(--color-box-shadow);
+}
+
+button p {
+  font-size: 1.4rem;
+  font-family: var(--font-family-primary);
+  font-weight: 700;
+  line-height: 2.4rem;
+
+  color: var(--bg-first-color);
+}
+/*FOOTER*/
+
+footer {
+  background: var(--background-second-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.2rem 0;
+}
+
+footer p {
+  color: var(--bg-first-color);
+  font-size: 2.0rem;
+  font-family: var(--font-family-primary);
+  font-weight: 600;
+}
