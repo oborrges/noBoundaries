@@ -49,6 +49,12 @@ body {
   padding-bottom: 3.5rem;
 }
 
+.homepagemedia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 /*SECOND PAGE*/ 
 
@@ -89,6 +95,9 @@ body {
 
 form {
   padding: 7.5rem 4.0rem 6.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 fieldset {
@@ -209,4 +218,25 @@ footer p {
   font-size: 2.0rem;
   font-family: var(--font-family-primary);
   font-weight: 600;
+}
+
+@media (min-width: 700px) {
+  .homePage {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .homepagemedia {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .homepagemedia h1 {
+    font-size:  3.5rem;
+  }
+
+  .homepagemedia p {
+    padding-bottom: 12.0rem;
+  }
 }
