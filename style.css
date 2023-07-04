@@ -26,7 +26,7 @@ body {
 }
 
 
-.homePage {
+.home-page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +34,7 @@ body {
 }
 
 
-.homePage h1 {
+.home-page h1 {
   color: var(--font-color-main);
   font-size: 3.2rem;
   font-family: var(--font-family-primary);
@@ -42,7 +42,7 @@ body {
   padding: 1.7rem 0 .5rem;
 }
 
-.homePage p {
+.home-page p {
   color: var(--font-color-secondary);
   font-size: 2.0rem;
   font-weight: 600;
@@ -58,7 +58,7 @@ body {
 
 /*SECOND PAGE*/ 
 
-.secondPage {
+.second-page {
   background: var(--background-second-color);
   display: flex;
   flex-direction: column;
@@ -221,7 +221,7 @@ footer p {
 }
 
 @media (min-width: 700px) {
-  .homePage {
+  .home-page {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -239,4 +239,5 @@ footer p {
   .homepagemedia p {
     padding-bottom: 12.0rem;
   }
+
 }
