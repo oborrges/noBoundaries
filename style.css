@@ -14,8 +14,6 @@
   --background-second-color: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
 
   --color-box-shadow: rgba(0, 0, 0, 0.25);
-
-
 }
 
 body {
@@ -23,8 +21,9 @@ body {
   font-family: var(--font-family-primary);
 
   background: var(--bg-first-color);
-}
 
+  width: 100%;
+}
 
 .home-page {
   display: flex;
@@ -32,7 +31,6 @@ body {
   align-items: center;
   margin-bottom: 9.3rem;
 }
-
 
 .home-page h1 {
   color: var(--font-color-main);
@@ -55,38 +53,46 @@ body {
   align-items: center;
 }
 
-
 /*SECOND PAGE*/ 
 
 .second-page {
+  min-width: 100%;
   background: var(--background-second-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 5rem;
+  padding:  5rem;
+  gap: 5rem;
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+
   background: var(--bg-first-color);
-  max-width: 29.9rem;
-  min-height: 28.5rem;
+
+  width:30.0rem;
+  height: 30.5rem;
   padding: 2.6rem;
   border-radius: 2rem;
   box-shadow: 0px 3.3px 13.2px 0px var(--color-box-shadow); 
-  margin-bottom: 5rem;
+}
+
+.card img {
+  width: 8rem;
 }
 
 .card h2 {
   color: var(--font-color-main);
-  font-size: 2.9rem;
+  font-size: 1.9rem;
   font-family: var(--font-family-primary);
   font-weight: 900;
   padding: 1.2rem 0 0.9rem;
 }
 
 .card p {
-  min-width: 24rem;
-  font-size: 1.6rem;
+  min-height: 12.5rem;
+  font-size: 1.4rem;
   font-family: var(--font-color-secondary);
   font-weight: 600;
 }
@@ -101,11 +107,11 @@ form {
 }
 
 fieldset {
- display: flex;
- flex-direction: column; 
- border: none;
+  display: flex;
+  flex-direction: column; 
+  border: none;
 
- background: var(--bg-first-color);
+  background: var(--bg-first-color);
 }
 
 legend {
@@ -121,7 +127,7 @@ input {
   background: var(--bg-first-color);
   
   display: flex;
-  max-width: 34.8rem;
+  width: 34.8rem;
   padding: 1.2rem 1.6rem 1.2rem 1.4rem;
   align-items: center;
   gap: 1.2rem;
@@ -154,8 +160,8 @@ textarea {
   background: var(--bg-first-color);
   
   display: flex;
-  max-width: 34.8rem;
-  max-height: 13.0rem;
+  width: 34.8rem;
+  height: 13.0rem;
   padding: 1.2rem 1.6rem 1.6rem 1.6rem;
   align-items: center;
   gap: 1.2rem;
@@ -202,9 +208,16 @@ button p {
 
   color: var(--bg-first-color);
 }
+
+.img-form {
+  display: none;
+}
+
 /*FOOTER*/
 
 footer {
+  width: 100%;
+
   background: var(--background-second-color);
 
   display: flex;
@@ -221,6 +234,7 @@ footer p {
 }
 
 @media (min-width: 700px) {
+
   .home-page {
     display: flex;
     flex-direction: row-reverse;
@@ -239,5 +253,45 @@ footer p {
   .homepagemedia p {
     padding-bottom: 12.0rem;
   }
+
+  /* SECOND-PAGE*/
+
+  .second-page {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .card {
+    scroll-snap-align: initial;
+    min-width: 43%;
+  }
+
+ /* FORM */
+
+ form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  padding: 0;
+ }
+
+ fieldset {
+  padding: 7.5rem 4.0rem 6.5rem 4.0rem;
+ }
+
+
+ .img-form {
+  display: inline;
+ 
+ }
+
+ .img-form img {
+  display: inline;
+  width: 100%;
+ }
 
 }
